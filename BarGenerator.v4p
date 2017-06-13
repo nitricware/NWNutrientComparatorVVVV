@@ -1,0 +1,399 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\vcr80\Desktop\diät\BarGenerator.v4p" scrollx="0" scrolly="-360">
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="5265" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="5070" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="5580" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="6075" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="3735" top="3975" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3735" top="3975" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.90526,0.27527,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="5370" top="3930" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5370" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.28910,0.84431,0.23241,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="3030" top="3090" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3030" top="3090" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Bar Position (/top/bottom)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="5055" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Node" left="7230" top="1995" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7230" top="1995" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1.9">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Max bar width|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="5580" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="6075" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="6075" top="3900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="2205" top="3915" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2205" top="3915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.46112,0.27526,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="2850" top="1860" width="1290" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2850" top="1860" width="1860" height="690">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|# Normalisieren und an&cr;&lf;# maximale Balkenlänge&cr;&lf;# anpassen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="7" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="7230" y="2385">
+   </LINKPOINT>
+   <LINKPOINT x="5385" y="2385">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1 - Protein g/day|">
+   </PIN>
+   <BOUNDS type="Box" left="5070" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5070" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 1">
+   </LINK>
+   <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2 - Fat g/day|">
+   </PIN>
+   <BOUNDS type="Box" left="5970" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5970" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 3 - Carbs g/day|">
+   </PIN>
+   <BOUNDS type="Box" left="6870" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6870" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="9" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="7230" y="2385">
+   </LINKPOINT>
+   <LINKPOINT x="5910" y="2385">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="5300" y="1883">
+   </LINKPOINT>
+   <LINKPOINT x="5800" y="1883">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="11" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="5610" y="3585">
+   </LINKPOINT>
+   <LINKPOINT x="6105" y="3585">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="6105" y="3390">
+   </LINKPOINT>
+   <LINKPOINT x="6375" y="3390">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="10" dstpinname="Input 1" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="7230" y="2385">
+   </LINKPOINT>
+   <LINKPOINT x="6405" y="2385">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="5265" y="1883">
+   </LINKPOINT>
+   <LINKPOINT x="6330" y="1883">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="14100" top="4650" width="10830" height="7965">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE id="13" systemname="BarPartGenerator" filename="BarPartGenerator.v4p" nodename="BarPartGenerator.v4p" componentmode="Hidden">
+   <BOUNDS type="Node" left="1500" top="4350" width="1470" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="4350" width="5125" height="7200">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="5125" height="7200">
+   </BOUNDS>
+   <PIN pinname="Output - Bar Part Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="13" dstpinname="Input - Bar Part Width" linkstyle="VHV">
+   <LINKPOINT x="6105" y="3390">
+   </LINKPOINT>
+   <LINKPOINT x="2595" y="3390">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Color Output" dstnodeid="13" dstpinname="Input - Color">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input - Max Bar Width" linkstyle="VHV">
+   <LINKPOINT x="7260" y="3810">
+   </LINKPOINT>
+   <LINKPOINT x="1890" y="3810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="13" dstpinname="TranslateY" linkstyle="VHV">
+   <LINKPOINT x="3060" y="3480">
+   </LINKPOINT>
+   <LINKPOINT x="1530" y="3480">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="14" systemname="BarPartGenerator" filename="BarPartGenerator.v4p" nodename="BarPartGenerator.v4p" componentmode="Hidden">
+   <BOUNDS type="Window" left="21330" top="5310" width="5115" height="7200">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3045" top="4350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output - Bar Part Layer" visible="1">
+   </PIN>
+   <PIN pinname="Input - Color" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   <PIN pinname="Input - Max Bar Width" visible="1">
+   </PIN>
+   <PIN pinname="Input - Bar Part Width" visible="1">
+   </PIN>
+   <PIN pinname="Input - Offset" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3045" top="4350">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="14" dstpinname="Input - Offset" linkstyle="VHV">
+   <LINKPOINT x="6105" y="3390">
+   </LINKPOINT>
+   <LINKPOINT x="4485" y="3390">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="14" dstpinname="Input - Bar Part Width" linkstyle="VHV">
+   <LINKPOINT x="5565" y="3585">
+   </LINKPOINT>
+   <LINKPOINT x="4170" y="3585">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Color Output" dstnodeid="14" dstpinname="Input - Color">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input - Max Bar Width" linkstyle="VHV">
+   <LINKPOINT x="7260" y="3810">
+   </LINKPOINT>
+   <LINKPOINT x="3420" y="3810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="14" dstpinname="TranslateY">
+   </LINK>
+   <NODE id="15" systemname="BarPartGenerator" filename="BarPartGenerator.v4p" nodename="BarPartGenerator.v4p" componentmode="Hidden">
+   <BOUNDS type="Window" left="21330" top="5310" width="5115" height="7200">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4650" top="4350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output - Bar Part Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="4650" top="4350">
+   </BOUNDS>
+   <PIN pinname="Input - Bar Part Width" visible="1" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   <PIN pinname="Input - Color" visible="1">
+   </PIN>
+   <PIN pinname="Input - Offset" visible="1">
+   </PIN>
+   <PIN pinname="Input - Max Bar Width" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="15" dstpinname="Input - Offset">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="15" dstpinname="Input - Bar Part Width" linkstyle="VHV">
+   <LINKPOINT x="5085" y="3060">
+   </LINKPOINT>
+   <LINKPOINT x="5745" y="3060">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Color Output" dstnodeid="15" dstpinname="Input - Color">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input - Max Bar Width" linkstyle="VHV">
+   <LINKPOINT x="7260" y="3810">
+   </LINKPOINT>
+   <LINKPOINT x="5025" y="3810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="15" dstpinname="TranslateY" linkstyle="VHV">
+   <LINKPOINT x="3060" y="3480">
+   </LINKPOINT>
+   <LINKPOINT x="4680" y="3480">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="1515" top="5340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="1530" top="5865" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1530" top="5865" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output - Bar Layer|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Layer" dstnodeid="24" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output - Bar Part Layer" dstnodeid="23" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output - Bar Part Layer" dstnodeid="23" dstpinname="Layer 2" linkstyle="VHV">
+   <LINKPOINT x="3075" y="4740">
+   </LINKPOINT>
+   <LINKPOINT x="1725" y="4740">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output - Bar Part Layer" dstnodeid="23" dstpinname="Layer 3" linkstyle="VHV">
+   <LINKPOINT x="4680" y="4980">
+   </LINKPOINT>
+   <LINKPOINT x="1905" y="4980">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

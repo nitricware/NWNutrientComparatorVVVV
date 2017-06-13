@@ -1,0 +1,831 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\vcr80\Desktop\diät\main.v4p" systemname="main" filename="C:\Users\vcr80\Desktop\diät\main.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="0" top="330" width="17130" height="14895">
+   </BOUNDS>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="180" top="180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="180" top="180" width="1170" height="705">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="179">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1425" top="180" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1425" top="180" width="1305" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|cm Körpergröße|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="2775" top="180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2775" top="180" width="1170" height="705">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="77">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4020" top="180" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4020" top="180" width="1440" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|kg Körpergewicht|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="BMICalculator" filename="BMICalculator.v4p" nodename="C:\Users\vcr80\Desktop\diät\BMICalculator.v4p" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="1500" top="1605" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="1605" width="3490" height="5655">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="3490" height="5655">
+   </BOUNDS>
+   <PIN pinname="Output - BMI" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input - Weight in kg" linkstyle="VHV">
+   <LINKPOINT x="2805" y="1005">
+   </LINKPOINT>
+   <LINKPOINT x="1530" y="1005">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input - Size in cm" linkstyle="VHV">
+   <LINKPOINT x="240" y="1230">
+   </LINKPOINT>
+   <LINKPOINT x="2700" y="1230">
+   </LINKPOINT>
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="6210" top="2190" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6210" top="2190" width="1170" height="705">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="77">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output - BMI" dstnodeid="16" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="2015" y="2020">
+   </LINKPOINT>
+   <LINKPOINT x="5755" y="2015">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7470" top="2190" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7470" top="2190" width="1305" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="BMI">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="5700" top="180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5700" top="180" width="1170" height="705">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6945" top="180" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6945" top="180" width="1215" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|PAL - Faktor|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="8490" top="180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8490" top="180" width="1170" height="705">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="27">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="28" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9750" top="180" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9750" top="180" width="1440" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alter in Jahren|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Input 2 - Y Output Value">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Input 2 - Y Output Value">
+   </LINK>
+   <NODE systemname="BasalMetabolicRateCalculator" filename="BasalMetabolicRateCalculator.v4p" nodename="BasalMetabolicRateCalculator.v4p" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="1500" top="3840" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="3840" width="9340" height="6480">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="9340" height="6480">
+   </BOUNDS>
+   <PIN pinname="Output - Basal Metabolic Rate" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Input - Weight in kg" linkstyle="VHV">
+   <LINKPOINT x="2805" y="1005">
+   </LINKPOINT>
+   <LINKPOINT x="1530" y="1005">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Input - Size in cm" linkstyle="VHV">
+   <LINKPOINT x="240" y="2355">
+   </LINKPOINT>
+   <LINKPOINT x="2250" y="2355">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Input - Age in years" linkstyle="VHV">
+   <LINKPOINT x="8245" y="1195">
+   </LINKPOINT>
+   <LINKPOINT x="4025" y="1220">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
+   <BOUNDS type="Node" left="6210" top="4305" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6210" top="4305" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8640" top="4305" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8640" top="4305" width="510" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="GU">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output - Basal Metabolic Rate" dstnodeid="42" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="1530" y="4170">
+   </LINKPOINT>
+   <LINKPOINT x="6255" y="4170">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="PhysicalActivityLevelCalculator" filename="PhysicalActivityLevelCalculator.v4p" nodename="PhysicalActivityLevelCalculator.v4p" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="1515" top="4425" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1515" top="4425" width="4525" height="4485">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4525" height="4485">
+   </BOUNDS>
+   <PIN pinname="Output - PhysicalActivityLevel" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output - Basal Metabolic Rate" dstnodeid="47" dstpinname="Input - BMR">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Input - PAL-Factor" linkstyle="VHV">
+   <LINKPOINT x="5730" y="4290">
+   </LINKPOINT>
+   <LINKPOINT x="3795" y="4290">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Node" left="6210" top="5790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6210" top="5790" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="48" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8640" top="5790" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8640" top="5790" width="510" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="LU">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Output - PhysicalActivityLevel" dstnodeid="49" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="1575" y="5228">
+   </LINKPOINT>
+   <LINKPOINT x="6210" y="5228">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output - PhysicalActivityLevel" dstnodeid="81" dstpinname="Input - PAL">
+   </LINK>
+   <NODE systemname="NutrientCalculator" filename="NutrientCalculator.v4p" nodename="NutrientCalculator.v4p" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="1535" top="6808" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="2166" width="9615" height="9285">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="9615" height="9285">
+   </BOUNDS>
+   <PIN pinname="Output - Fat in g/day" visible="1">
+   </PIN>
+   <PIN pinname="Output - Carbs in g/day" visible="1">
+   </PIN>
+   <PIN pinname="Output - Proteins in g/day" visible="1">
+   </PIN>
+   <PIN pinname="Output - kcal Fat/day" visible="1">
+   </PIN>
+   <PIN pinname="Output - kcal Carbs/day" visible="1">
+   </PIN>
+   <PIN pinname="Output - kcal Proteins/day" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="88" dstpinname="Input - Weight in kg" linkstyle="VHV">
+   <LINKPOINT x="2805" y="3150">
+   </LINKPOINT>
+   <LINKPOINT x="2985" y="3150">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output - PhysicalActivityLevel" dstnodeid="88" dstpinname="Input - PAL">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="90">
+   <BOUNDS type="Node" left="6225" top="7470" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6225" top="7470" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8655" top="7470" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8655" top="7470" width="2070" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g EW/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="92">
+   <BOUNDS type="Node" left="6225" top="8595" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6225" top="8595" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8655" top="8595" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8655" top="8595" width="1785" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g Fett/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="94">
+   <BOUNDS type="Node" left="6225" top="9660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6225" top="9660" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8655" top="9660" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8655" top="9660" width="1650" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g Kohlenhydrate/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Output - Fat in g/day" dstnodeid="92" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="1845" y="8370">
+   </LINKPOINT>
+   <LINKPOINT x="6255" y="8370">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - Carbs in g/day" dstnodeid="94" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="2130" y="9495">
+   </LINKPOINT>
+   <LINKPOINT x="6255" y="9495">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - Proteins in g/day" dstnodeid="90" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="2700" y="7230">
+   </LINKPOINT>
+   <LINKPOINT x="6255" y="7230">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="95">
+   <BOUNDS type="Node" left="5355" top="11580" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5355" top="11580" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19620" top="1080" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="96">
+   <BOUNDS type="Node" left="5340" top="11100" width="540" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer Template Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 9" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Layer" dstnodeid="95" dstpinname="Layers">
+   </LINK>
+   <NODE id="177" systemname="BarGenerator" filename="BarGenerator.v4p" nodename="BarGenerator.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="5355" top="10590" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="120" top="45" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14100" top="4650" width="10830" height="7965">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateY" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input - Max Bar Width" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input - Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,0.46112,0.27526,1.00000|">
+   </PIN>
+   <PIN pinname="Input - Bar Part Width" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input - Offset" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Output - Bar Part Layer" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Input 1 - Protein g/day" visible="1">
+   </PIN>
+   <PIN pinname="Input 2 - Fat g/day" visible="1">
+   </PIN>
+   <PIN pinname="Input 3 - Input" visible="1">
+   </PIN>
+   <PIN pinname="Output - Bar Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 1 - Protein g/day" linkstyle="VHV">
+   <LINKPOINT x="6255" y="8310">
+   </LINKPOINT>
+   <LINKPOINT x="5670" y="8310">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 2 - Fat g/day" linkstyle="VHV">
+   <LINKPOINT x="6255" y="9405">
+   </LINKPOINT>
+   <LINKPOINT x="5955" y="9405">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 3 - Carbs g/day" linkstyle="PolyLine">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="178">
+   <BOUNDS type="Node" left="6210" top="3180" width="1140" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6210" top="3180" width="4350" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="SOLL-WERTE">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="185">
+   <BOUNDS type="Node" left="11490" top="7485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11490" top="7485" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="184" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="13920" top="7485" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13920" top="7485" width="2070" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g EW/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="183">
+   <BOUNDS type="Node" left="11490" top="8610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11490" top="8610" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="182" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="13920" top="8610" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13920" top="8610" width="1785" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g Fett/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="181">
+   <BOUNDS type="Node" left="11490" top="9675" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11490" top="9675" width="2280" height="720">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="300">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="180" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="13920" top="9675" width="1305" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13920" top="9675" width="1650" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|g Kohlenhydrate/Tag|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="179">
+   <BOUNDS type="Node" left="11475" top="3195" width="1140" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11475" top="3195" width="4350" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="IST-WERTE">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="30">
+   </PIN>
+   </NODE>
+   <NODE systemname="BarGenerator" filename="BarGenerator.v4p" nodename="BarGenerator.v4p" componentmode="Hidden" id="190">
+   <BOUNDS type="Node" left="10650" top="10575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1 - Protein g/day" visible="1">
+   </PIN>
+   <PIN pinname="Input 2 - Fat g/day" visible="1">
+   </PIN>
+   <PIN pinname="Input 3 - Carbs g/day" visible="1">
+   </PIN>
+   <PIN pinname="Bar Position (/top/bottom)" visible="1" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Output - Bar Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="185" srcpinname="Y Output Value" dstnodeid="190" dstpinname="Input 1 - Protein g/day" linkstyle="VHV">
+   <LINKPOINT x="11520" y="8280">
+   </LINKPOINT>
+   <LINKPOINT x="10965" y="8280">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="190" dstpinname="Input 2 - Fat g/day" linkstyle="VHV">
+   <LINKPOINT x="11520" y="9525">
+   </LINKPOINT>
+   <LINKPOINT x="11250" y="9525">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="190" dstpinname="Input 3 - Carbs g/day">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Output - Bar Layer" dstnodeid="96" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="190" srcpinname="Output - Bar Layer" dstnodeid="96" dstpinname="Layer 2" linkstyle="VHV">
+   <LINKPOINT x="10650" y="10958">
+   </LINKPOINT>
+   <LINKPOINT x="5640" y="10958">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="192">
+   <BOUNDS type="Node" left="1500" top="13155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="13155" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19770" top="6810" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NutrientToKcalCalculator" filename="NutrientToKcalCalculator.v4p" nodename="NutrientToKcalCalculator.v4p" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="10111" top="11586" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6739" top="9366" width="6745" height="4440">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17085" top="7995" width="6735" height="4440">
+   </BOUNDS>
+   <PIN pinname="Input - Proteins" visible="1">
+   </PIN>
+   <PIN pinname="Input - Fat" visible="1">
+   </PIN>
+   <PIN pinname="Output - Carbs kcal" visible="1">
+   </PIN>
+   <PIN pinname="Output - Proteins kcal" visible="1">
+   </PIN>
+   <PIN pinname="Output - Fat kcal" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Carbs" linkstyle="VHV">
+   <LINKPOINT x="11455" y="11190">
+   </LINKPOINT>
+   <LINKPOINT x="10205" y="11190">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Proteins" linkstyle="VHV">
+   <LINKPOINT x="11455" y="8280">
+   </LINKPOINT>
+   <LINKPOINT x="11150" y="8280">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Fat" linkstyle="VHV">
+   <LINKPOINT x="11455" y="9525">
+   </LINKPOINT>
+   <LINKPOINT x="12080" y="9525">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="CompareChartGenerator" filename="CompareChartGenerator.v4p" nodename="CompareChartGenerator.v4p" componentmode="Hidden" id="238">
+   <BOUNDS type="Node" left="1517" top="12678" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="8186" width="7980" height="8985">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="7980" height="8985">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Output - kcal Fat/day" dstnodeid="238" dstpinname="Output - kcal Fat/day">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - kcal Carbs/day" dstnodeid="238" dstpinname="Output - kcal Carbs/day" linkstyle="VHV">
+   <LINKPOINT x="2400" y="10045">
+   </LINKPOINT>
+   <LINKPOINT x="1920" y="9680">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - kcal Proteins/day" dstnodeid="238" dstpinname="Output - kcal Proteins/day" linkstyle="VHV">
+   <LINKPOINT x="2985" y="10495">
+   </LINKPOINT>
+   <LINKPOINT x="2280" y="10130">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Carbs kcal" dstnodeid="238" dstpinname="Output - Carbs kcal" linkstyle="VHV">
+   <LINKPOINT x="10140" y="11925">
+   </LINKPOINT>
+   <LINKPOINT x="2655" y="11925">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Proteins kcal" dstnodeid="238" dstpinname="Output - Proteins kcal" linkstyle="VHV">
+   <LINKPOINT x="11055" y="12430">
+   </LINKPOINT>
+   <LINKPOINT x="3060" y="12065">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Fat kcal" dstnodeid="238" dstpinname="Output - Fat kcal" linkstyle="VHV">
+   <LINKPOINT x="12015" y="12865">
+   </LINKPOINT>
+   <LINKPOINT x="3390" y="12500">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="238" srcpinname="Output - Compare Chart" dstnodeid="192" dstpinname="Layers">
+   </LINK>
+   </PATCH>
