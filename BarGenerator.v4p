@@ -260,7 +260,7 @@
    <LINKPOINT x="6330" y="1883">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="14100" top="4650" width="10830" height="7965">
+   <BOUNDS type="Window" left="6255" top="3870" width="10830" height="7965">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>

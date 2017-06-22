@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
    <PATCH nodename="C:\Users\vcr80\Dropbox\dev\vvvv\NWNutrientComparatorVVVV\main.v4p" systemname="main" filename="C:\Users\vcr80\Desktop\diät\main.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="-105" top="0" width="14610" height="15705">
+   <BOUNDS type="Window" left="7275" top="210" width="14610" height="15705">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="180" top="180" width="100" height="100">
@@ -483,9 +483,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="95">
-   <BOUNDS type="Node" left="5355" top="11580" width="100" height="100">
+   <BOUNDS type="Node" left="5370" top="13080" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5355" top="11580" width="2400" height="1800">
+   <BOUNDS type="Box" left="5370" top="13080" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="14295" top="0" width="14610" height="7905">
    </BOUNDS>
@@ -493,7 +493,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="96">
-   <BOUNDS type="Node" left="5340" top="11100" width="540" height="270">
+   <BOUNDS type="Node" left="5355" top="12600" width="540" height="270">
    </BOUNDS>
    <PIN pinname="Layer Template Count" slicecount="1" values="2">
    </PIN>
@@ -516,12 +516,12 @@
    </NODE>
    <LINK srcnodeid="96" srcpinname="Layer" dstnodeid="95" dstpinname="Layers">
    </LINK>
-   <NODE id="177" systemname="BarGenerator" filename="BarGenerator.v4p" nodename="BarGenerator.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="5355" top="10590" width="100" height="100">
+   <NODE id="177" systemname="BarGenerator" filename="BarGenerator.v4p" nodename="BarGenerator.v4p" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="5340" top="11550" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="120" top="45" width="4800" height="3600">
+   <BOUNDS type="Box" left="105" top="1005" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="14100" top="4650" width="10830" height="7965">
+   <BOUNDS type="Window" left="6255" top="3870" width="10830" height="7965">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -547,29 +547,19 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
-   <PIN pinname="Input 1 - Protein g/day" visible="1">
+   <PIN pinname="Input 1 - Protein g/day" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 2 - Fat g/day" visible="1">
+   <PIN pinname="Input 2 - Fat g/day" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 3 - Input" visible="1">
    </PIN>
    <PIN pinname="Output - Bar Layer" visible="1">
    </PIN>
+   <PIN pinname="Input 3 - Carbs g/day" visible="1" slicecount="1" values="389.5836875">
+   </PIN>
+   <PIN pinname="Bar Position (/top/bottom)" visible="1" slicecount="1" values="0.5">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="90" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 1 - Protein g/day" linkstyle="VHV">
-   <LINKPOINT x="6255" y="8310">
-   </LINKPOINT>
-   <LINKPOINT x="5670" y="8310">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 2 - Fat g/day" linkstyle="VHV">
-   <LINKPOINT x="6255" y="9405">
-   </LINKPOINT>
-   <LINKPOINT x="5955" y="9405">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Input 3 - Carbs g/day" linkstyle="PolyLine">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="178">
    <BOUNDS type="Node" left="6210" top="3180" width="1140" height="270">
    </BOUNDS>
@@ -601,7 +591,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Real">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="297">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="50">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -669,7 +659,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Real">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -735,15 +725,15 @@
    <LINK srcnodeid="177" srcpinname="Output - Bar Layer" dstnodeid="96" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="190" srcpinname="Output - Bar Layer" dstnodeid="96" dstpinname="Layer 2" linkstyle="VHV">
-   <LINKPOINT x="10650" y="10958">
+   <LINKPOINT x="10655" y="11458">
    </LINKPOINT>
-   <LINKPOINT x="5640" y="10958">
+   <LINKPOINT x="5650" y="11958">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="192">
-   <BOUNDS type="Node" left="1500" top="13155" width="100" height="100">
+   <BOUNDS type="Node" left="1515" top="14655" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="13155" width="2400" height="1800">
+   <BOUNDS type="Box" left="1515" top="14655" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="14295" top="7800" width="14610" height="7905">
    </BOUNDS>
@@ -751,9 +741,9 @@
    </PIN>
    </NODE>
    <NODE systemname="NutrientToKcalCalculator" filename="NutrientToKcalCalculator.v4p" nodename="NutrientToKcalCalculator.v4p" componentmode="Hidden" id="205">
-   <BOUNDS type="Node" left="10111" top="11586" width="0" height="0">
+   <BOUNDS type="Node" left="10126" top="13086" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6739" top="9366" width="6745" height="4440">
+   <BOUNDS type="Box" left="6754" top="10866" width="6745" height="4440">
    </BOUNDS>
    <BOUNDS type="Window" left="17085" top="7995" width="6735" height="4440">
    </BOUNDS>
@@ -769,61 +759,73 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Carbs" linkstyle="VHV">
-   <LINKPOINT x="11455" y="11190">
+   <LINKPOINT x="11460" y="11690">
    </LINKPOINT>
-   <LINKPOINT x="10205" y="11190">
+   <LINKPOINT x="10215" y="12190">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="185" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Proteins" linkstyle="VHV">
-   <LINKPOINT x="11455" y="8280">
+   <LINKPOINT x="11460" y="8780">
    </LINKPOINT>
-   <LINKPOINT x="11150" y="8280">
+   <LINKPOINT x="11160" y="9280">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Input - Fat" linkstyle="VHV">
-   <LINKPOINT x="11455" y="9525">
+   <LINKPOINT x="11460" y="10025">
    </LINKPOINT>
-   <LINKPOINT x="12080" y="9525">
+   <LINKPOINT x="12090" y="10525">
    </LINKPOINT>
    </LINK>
    <NODE systemname="CompareChartGenerator" filename="CompareChartGenerator.v4p" nodename="CompareChartGenerator.v4p" componentmode="Hidden" id="238">
-   <BOUNDS type="Node" left="1517" top="12678" width="0" height="0">
+   <BOUNDS type="Node" left="1532" top="14178" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="8186" width="7980" height="8985">
+   <BOUNDS type="Box" left="15" top="9686" width="7980" height="8985">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="7980" height="8985">
    </BOUNDS>
+   <PIN pinname="Input - Should - kcal Fat/day" visible="1">
+   </PIN>
+   <PIN pinname="Input - Should - kcal Carbs/day" visible="1">
+   </PIN>
+   <PIN pinname="Input - Should - kcal Proteins/day" visible="1">
+   </PIN>
+   <PIN pinname="Input - Does - Carbs kcal" visible="1">
+   </PIN>
+   <PIN pinname="Input - Does - Proteins kcal" visible="1">
+   </PIN>
+   <PIN pinname="Input - Does - Fat kcal" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="Output - kcal Fat/day" dstnodeid="238" dstpinname="Output - kcal Fat/day">
    </LINK>
    <LINK srcnodeid="88" srcpinname="Output - kcal Carbs/day" dstnodeid="238" dstpinname="Output - kcal Carbs/day" linkstyle="VHV">
-   <LINKPOINT x="2400" y="10045">
+   <LINKPOINT x="2405" y="10545">
    </LINKPOINT>
-   <LINKPOINT x="1920" y="9680">
+   <LINKPOINT x="1930" y="10680">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="88" srcpinname="Output - kcal Proteins/day" dstnodeid="238" dstpinname="Output - kcal Proteins/day" linkstyle="VHV">
-   <LINKPOINT x="2985" y="10495">
+   <LINKPOINT x="2990" y="10995">
    </LINKPOINT>
-   <LINKPOINT x="2280" y="10130">
+   <LINKPOINT x="2290" y="11130">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="205" srcpinname="Output - Carbs kcal" dstnodeid="238" dstpinname="Output - Carbs kcal" linkstyle="VHV">
-   <LINKPOINT x="10140" y="11925">
+   <LINKPOINT x="10155" y="13425">
    </LINKPOINT>
-   <LINKPOINT x="2655" y="11925">
+   <LINKPOINT x="2670" y="13425">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="205" srcpinname="Output - Proteins kcal" dstnodeid="238" dstpinname="Output - Proteins kcal" linkstyle="VHV">
-   <LINKPOINT x="11055" y="12430">
+   <LINKPOINT x="11070" y="13930">
    </LINKPOINT>
-   <LINKPOINT x="3060" y="12065">
+   <LINKPOINT x="3075" y="13565">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="205" srcpinname="Output - Fat kcal" dstnodeid="238" dstpinname="Output - Fat kcal" linkstyle="VHV">
-   <LINKPOINT x="12015" y="12865">
+   <LINKPOINT x="12030" y="14365">
    </LINKPOINT>
-   <LINKPOINT x="3390" y="12500">
+   <LINKPOINT x="3405" y="14000">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="238" srcpinname="Output - Compare Chart" dstnodeid="192" dstpinname="Layers">
@@ -878,6 +880,182 @@
    <LINKPOINT x="2805" y="6135">
    </LINKPOINT>
    <LINKPOINT x="6270" y="6135">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - kcal Fat/day" dstnodeid="238" dstpinname="Input - Should - kcal Fat/day">
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - Fat in g/day" dstnodeid="238" dstpinname="Input - Should - kcal Carbs/day" linkstyle="VHV">
+   <LINKPOINT x="1850" y="10378">
+   </LINKPOINT>
+   <LINKPOINT x="1915" y="10878">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output - Carbs in g/day" dstnodeid="238" dstpinname="Input - Should - kcal Proteins/day" linkstyle="VHV">
+   <LINKPOINT x="2135" y="10370">
+   </LINKPOINT>
+   <LINKPOINT x="2275" y="10870">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Carbs kcal" dstnodeid="238" dstpinname="Input - Does - Carbs kcal" linkstyle="VHV">
+   <LINKPOINT x="10125" y="13748">
+   </LINKPOINT>
+   <LINKPOINT x="2700" y="13748">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Proteins kcal" dstnodeid="238" dstpinname="Input - Does - Proteins kcal" linkstyle="VHV">
+   <LINKPOINT x="11100" y="13830">
+   </LINKPOINT>
+   <LINKPOINT x="3030" y="13830">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="Output - Fat kcal" dstnodeid="238" dstpinname="Input - Does - Fat kcal" linkstyle="VHV">
+   <LINKPOINT x="12030" y="13905">
+   </LINKPOINT>
+   <LINKPOINT x="3405" y="13905">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="LinearFilter (Animation)" nodename="LinearFilter (Animation)" componentmode="Hidden" id="252">
+   <BOUNDS type="Node" left="5325" top="11190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearFilter (Animation)" nodename="LinearFilter (Animation)" componentmode="Hidden" id="251">
+   <BOUNDS type="Node" left="5610" top="10845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearFilter (Animation)" nodename="LinearFilter (Animation)" componentmode="Hidden" id="250">
+   <BOUNDS type="Node" left="5895" top="10515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="250" dstpinname="Go To Position" linkstyle="VHV">
+   <LINKPOINT x="6225" y="10433">
+   </LINKPOINT>
+   <LINKPOINT x="5955" y="10433">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="251" dstpinname="Go To Position" linkstyle="VHV">
+   <LINKPOINT x="6255" y="9420">
+   </LINKPOINT>
+   <LINKPOINT x="5640" y="9420">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Y Output Value" dstnodeid="252" dstpinname="Go To Position" linkstyle="VHV">
+   <LINKPOINT x="6255" y="8325">
+   </LINKPOINT>
+   <LINKPOINT x="5355" y="8325">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Position Out" dstnodeid="177" dstpinname="Input 1 - Protein g/day" linkstyle="VHV">
+   <LINKPOINT x="5385" y="11490">
+   </LINKPOINT>
+   <LINKPOINT x="5625" y="11490">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="251" srcpinname="Position Out" dstnodeid="177" dstpinname="Input 2 - Fat g/day" linkstyle="VHV">
+   <LINKPOINT x="5640" y="11145">
+   </LINKPOINT>
+   <LINKPOINT x="5940" y="11145">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="250" srcpinname="Position Out" dstnodeid="177" dstpinname="Input 3 - Carbs g/day" linkstyle="VHV">
+   <LINKPOINT x="5925" y="10815">
+   </LINKPOINT>
+   <LINKPOINT x="6225" y="10815">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="255" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="-0.5">
+   </PIN>
+   <BOUNDS type="Box" left="9990" top="10200" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9990" top="10200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" pintype="Configuration" values="4">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Value Type" pintype="Configuration" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Behavior" pintype="Configuration" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Vector Size" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" pintype="Configuration" slicecount="1" values="-99999999">
+   </PIN>
+   <PIN pinname="Maximum" pintype="Configuration" slicecount="1" values="99999999">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Value" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Slider" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" pintype="Configuration" slicecount="1" values="Endless">
+   </PIN>
+   <PIN pinname="Show Connections" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Background" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Sticky Slider" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Allow MouseOffset" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Constraints" pintype="Configuration" slicecount="1" values="scX">
+   </PIN>
+   <PIN pinname="Slider Alignment" pintype="Configuration" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Y Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="255" srcpinname="Y Output Value" dstnodeid="190" dstpinname="Bar Position (/top/bottom)" linkstyle="VHV">
+   <LINKPOINT x="10050" y="10493">
+   </LINKPOINT>
+   <LINKPOINT x="10650" y="10493">
    </LINKPOINT>
    </LINK>
    </PATCH>
