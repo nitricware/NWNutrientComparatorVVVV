@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\vcr80\Desktop\diät\BarGenerator.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vcr80\Dropbox\dev\vvvv\NWNutrientComparatorVVVV\BarGenerator.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5265" top="1500" width="100" height="100">
    </BOUNDS>
@@ -174,7 +174,11 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="1" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 1">
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="5100" y="1118">
+   </LINKPOINT>
+   <LINKPOINT x="5280" y="1118">
+   </LINKPOINT>
    </LINK>
    <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2 - Fat g/day|">
@@ -184,7 +188,11 @@
    <BOUNDS type="Node" left="5970" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 2">
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="5970" y="1118">
+   </LINKPOINT>
+   <LINKPOINT x="5505" y="1118">
+   </LINKPOINT>
    </LINK>
    <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input 3 - Carbs g/day|">
@@ -194,7 +202,11 @@
    <BOUNDS type="Node" left="6870" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 3">
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 3" linkstyle="VHV">
+   <LINKPOINT x="6900" y="1230">
+   </LINKPOINT>
+   <LINKPOINT x="5685" y="1230">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="9" dstpinname="Input 1">
    </LINK>
@@ -204,7 +216,11 @@
    <LINKPOINT x="5910" y="2385">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input">
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="5985" y="1380">
+   </LINKPOINT>
+   <LINKPOINT x="5610" y="1380">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input 2" linkstyle="VHV">
    <LINKPOINT x="5300" y="1883">
@@ -232,7 +248,11 @@
    <LINKPOINT x="6405" y="2385">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input">
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="6900" y="1230">
+   </LINKPOINT>
+   <LINKPOINT x="6105" y="1230">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Input 2" linkstyle="VHV">
    <LINKPOINT x="5265" y="1883">
@@ -249,7 +269,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1500" top="4350" width="5125" height="7200">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="5125" height="7200">
+   <BOUNDS type="Window" left="19170" top="5250" width="5115" height="7200">
    </BOUNDS>
    <PIN pinname="Output - Bar Part Layer" visible="1">
    </PIN>

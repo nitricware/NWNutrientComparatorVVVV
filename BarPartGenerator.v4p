@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\vcr80\Desktop\diät\BarPartGenerator.v4p" systemname="BarPartGenerator" filename="C:\Users\vcr80\Desktop\diät\BarPartGenerator.v4p">
+   <PATCH nodename="C:\Users\vcr80\Dropbox\dev\vvvv\NWNutrientComparatorVVVV\BarPartGenerator.v4p" systemname="BarPartGenerator" filename="C:\Users\vcr80\Desktop\diät\BarPartGenerator.v4p">
    <NODE id="0" systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="1665" top="4785" width="100" height="100">
    </BOUNDS>
@@ -424,7 +424,11 @@
    <BOUNDS type="Node" left="1665" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="TranslateY">
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="TranslateY" linkstyle="VHV">
+   <LINKPOINT x="1695" y="2753">
+   </LINKPOINT>
+   <LINKPOINT x="2010" y="2753">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="ScaleX" linkstyle="VHV">
    <LINKPOINT x="2700" y="4440">
@@ -444,7 +448,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="5125" height="7200">
+   <BOUNDS type="Window" left="19170" top="5250" width="5115" height="7200">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
